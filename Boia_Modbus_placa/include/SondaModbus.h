@@ -4,7 +4,6 @@
 #include "Types.h"
 
 // Sonda AcquaProbe-AQ via Modbus RTU (9600 8N1).
-// Lógica copiada do teste que funciona (BoiaModbus_teste_cpp_04-08-2026).
 class SondaModbus {
 private:
     ModbusMaster _node;
