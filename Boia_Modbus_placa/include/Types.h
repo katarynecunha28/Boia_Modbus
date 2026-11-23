@@ -1,8 +1,6 @@
 #pragma once
 #include <Arduino.h>
 
-// ATENÇÃO: o pacote é enviado "cru" por LoRa. Os campos novos da sonda foram
-// adicionados NO FINAL para não deslocar os offsets que o servidor já decodifica.
 typedef struct {
   char boia_id[16];
   uint32_t contador;
@@ -34,7 +32,7 @@ typedef struct {
   float temp_int;
   float temp_ext;
 
-  // --- Novos parâmetros da sonda AcquaProbe (final do struct) ---
+  //  Novos parâmetros da sonda 
   float salinidade;   // PSU
   float tds;          // mg/L
   float grav_esp;     // gravidade específica
